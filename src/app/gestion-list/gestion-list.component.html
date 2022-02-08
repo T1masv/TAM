@@ -1,0 +1,9 @@
+<p>Select a video</p>
+<ul>
+  <li *ngFor="let video of videos">
+    <button type="button" (click)="addVideo(video)">
+      {{video}}
+    </button>
+    <app-carte></app-carte>
+  </li>
+</ul>

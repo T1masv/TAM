@@ -4,6 +4,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
+import { GestionListComponent } from './gestion-list/gestion-list.component';
 import { HeaderComponent } from './header/header.component';
 import { RouterModule } from '@angular/router';
 import { FooterComponent } from './footer/footer.component';
@@ -14,6 +15,7 @@ import { FooterComponent } from './footer/footer.component';
     AppComponent,
     HeaderComponent,
     FooterComponent
+    GestionListComponent
   ],
   imports: [
     BrowserModule,
