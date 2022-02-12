@@ -1,9 +1,16 @@
-<p>Select a video</p>
-<ul>
+<p>My List/Galery</p>
+<!-- <ul>
   <li *ngFor="let video of videos">
     <button type="button" (click)="addVideo(video)">
       {{video}}
     </button>
-    <app-carte></app-carte>
+    <app-card (click)="addVideo(video)"></app-card>
+  </li>
+</ul> -->
+<ul>
+  <li *ngFor="video of videos">
+    <app-card [title]="'Uncharted'" [description]="'Film avec des trésors cachés ...'"></app-card>
   </li>
 </ul>
+
+<!-- <button (click)="delVideo()">Supprimer votre dernière série !</button> -->

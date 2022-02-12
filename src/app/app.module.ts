@@ -16,6 +16,7 @@ import { FooterComponent } from './footer/footer.component';
     HeaderComponent,
     FooterComponent
     GestionListComponent
+    GestionListComponent
   ],
   imports: [
     BrowserModule,
