@@ -1,0 +1,22 @@
+a {
+    flex-grow: 3;
+    color: white;
+}
+
+.navGang {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    background-color: #1b1b1a;
+}
+
+
+.header {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    background-color: #1b1b1a;
+    color: white;
+    text-align: center;
+}
