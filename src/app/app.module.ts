@@ -3,13 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { GestionListComponent } from './gestion-list/gestion-list.component';
-import { CarteComponent } from './carte/carte.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GestionListComponent,
-    CarteComponent
+    CardComponent,
   ],
   imports: [
     BrowserModule

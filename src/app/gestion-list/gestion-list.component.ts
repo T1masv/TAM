@@ -1,27 +1,30 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { CardComponent } from '../card/card.component';
 
 @Component({
   selector: 'app-gestion-list',
   templateUrl: './gestion-list.component.html',
-  styleUrls: ['./gestion-list.component.css']
+  styleUrls: ['./gestion-list.component.css'],
+  providers : [CardComponent]
 })
 export class GestionListComponent implements OnInit {
-
+  test : CardComponent = new CardComponent(); // Juste pour le test
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  videos: Array<String> = ["Test1", "Test2", "Test3"];
+  videos: Array<CardComponent> = [this.test];
  
   // Juste à remplacer le type sting par un type carde ou video
-  addVideo(video : String) {
-    this.videos.push(video + "New Element");
+  addVideo(video : CardComponent) {
+    this.videos.push(video);
   }
 
-  delVideo(video : String) {
+  delVideo(video : CardComponent) {
     //delete this.videos.indexOf(video);
     var indice = this.videos.indexOf(video);
+    console.log(indice);
     this.videos.splice(indice,1);
   }
 
