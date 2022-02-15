@@ -1,0 +1,26 @@
+<p>My List/Galery</p>
+<!-- <ul>
+  <li *ngFor="let video of videos">
+    <button type="button" (click)="addVideo(video)">
+      {{video}}
+    </button>
+    <app-card (click)="addVideo(video)"></app-card>
+  </li>
+</ul> -->
+<ul>
+  <li *ngFor="let video of videos">
+    <div class="card" style="width: 18rem;">
+      <img src="https://image.tmdb.org/t/p/w500/{{video.poster_path}}" class="card-img-top" alt="Coming soon... (poster)">
+      <div class="card-body">
+        <h5 class="card-title">{{video.title}}</h5>
+        <p class="card-text">{{video.overview}}</p>
+        <button type="button" class="btn btn-primary" (click)="delVideo(video)">Supprimer</button>
+      </div>
+  </div>
+    <!-- <app-card [title]="'Uncharted'" [description]="'Film avec des trésors cachés ...'" [img] = "'ok'"></app-card> -->
+  </li>
+</ul>
+
+
+
+<!-- <button (click)="delVideo()">Supprimer ce film !</button> -->
