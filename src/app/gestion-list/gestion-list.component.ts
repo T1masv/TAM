@@ -13,11 +13,15 @@ import { Movie } from '../models/movie.model';
 export class GestionListComponent implements OnInit {
   test : VideoComponent = new VideoComponent(); // Juste pour le test
   videos : Movie[] = [];
+  videos2 : Movie[] = [];
+
 
   constructor(private movieService : MovieService) { }
 
   ngOnInit(): void {
     console.log(this.getMovies()[0]);
+    this.videos = this.getMovies();
+    // this.videos2 = this.getMovies2();
   }
 
  
@@ -31,6 +35,10 @@ export class GestionListComponent implements OnInit {
     var indice = this.videos.indexOf(video);
     console.log(indice);
     this.videos.splice(indice,1);
+  }
+
+  getMovies2() {
+    this.movieService.getVideos().subscribe(res=>res.results.map(x=>this.addVideo(x)));
   }
 
   getMovies() {

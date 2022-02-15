@@ -6,10 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./video.component.css']
 })
 export class VideoComponent implements OnInit {
-  saisons : Array<String> = [];
+  titre : Array<String> = [];
   episodes : Array<String> = [];
   description : string = "description...";
-  langue : string = "Français";
   constructor() { }
 
   ngOnInit(): void {

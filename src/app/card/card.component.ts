@@ -12,6 +12,8 @@ export class CardComponent implements OnInit {
   @Input() title: string = "";
   @Input() description: string ="";
   @Input() myVideo: Movie = {};
+  @Input() img: string = "";
+
   
   constructor() {  }
 

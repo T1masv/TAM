@@ -15,4 +15,10 @@ export interface Movie {
   vote_count?:Number;
 }
 
+export interface Response{
+  page?: Number ;
+  results:Array<Movie>;
+  total_pages: Number;
+  total_results: Number;
+}
 
