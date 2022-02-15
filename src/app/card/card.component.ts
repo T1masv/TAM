@@ -1,21 +1,25 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { VideoComponent } from '../video/video.component';
+import { Movie } from '../models/movie.model';
 
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
-  styleUrls: ['./card.component.css']
+  styleUrls: ['./card.component.css'],
+  providers : [VideoComponent]
 })
 export class CardComponent implements OnInit {
   @Input() title: string = "";
   @Input() description: string ="";
-  // carte: Map<String,String>;
+  @Input() myVideo: Movie = {};
   
-  // constructor() { //private information: Map<String,String>
-  //   this.carte = new Map;
-  // }
+  constructor() {  }
 
   ngOnInit(): void {
-    // this.carte = new Map;
-    // console.log(this.title);
   }
+
+  displayVideo(): void {
+    console.log("ok")
+  }
+
 }

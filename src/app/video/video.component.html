@@ -1,0 +1,50 @@
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    Launch static backdrop modal
+</button> -->
+  
+  <!-- Modal -->
+  <div id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+          <button routerLink="" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="card lesson-border">
+            <img class="card-img-top" src="./cgs.jpeg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text"><b>Description: </b>{{this.description}}</p>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Terminé !</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+
+
+<!-- <p>video works!</p>
+<div>
+    <img src="" alt="Poster">
+    <h1></h1>
+</div>
+<div>
+    <p>{{this.description}}</p>
+    <label></label>
+    <p>{{this.langue}}</p> -->
+
+    <!-- <table>
+        <tr *ngFor="let saison of saisons">
+            <h2>{{saison}}</h2>
+            <td *ngFor="let episode of episodes">
+                <label></label>
+                <input type="checkbox">
+            </td>
+        </tr>
+    </table> -->
+<!-- </div> -->
+
