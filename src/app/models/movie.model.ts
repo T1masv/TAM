@@ -21,4 +21,3 @@ export interface Response{
   total_pages: Number;
   total_results: Number;
 }
-

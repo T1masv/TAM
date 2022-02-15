@@ -9,7 +9,8 @@ export class MovieService {
   constructor(private http : HttpClient) { }
 
   getVideos(){
-    return this.http.get<Response>('https://api.themoviedb.org/3/discover/movie?api_key=c24b3064cd7068cfdf5b6026870e5b32&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_watch_monetization_types=flatrate%27%27)');
+    const page = Math.floor(Math.random() * (10 - 1 + 1)) + 1;
+    return this.http.get<Response>(`https://api.themoviedb.org/3/discover/movie?page=${page}&api_key=c24b3064cd7068cfdf5b6026870e5b32&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_watch_monetization_types=flatrate%27`);
   }
 
 
